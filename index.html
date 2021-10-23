@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first project</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .bgimage {
+        background-image: url(back.jpg);
+        /* background-color: rgb(195, 195, 250); */
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+      }
+      .rightmenu ul {
+        display: flex;
+        float: right;
+        list-style: none;
+        margin-top: -50px;
+        margin-right: 20px;
+      }
+      .rightmenu a {
+        padding: 10px;
+        text-decoration-line: none;
+        color: gainsboro;
+        font-weight: bolder;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        /* text-shadow: 0px 2px 3px; */
+      }
+      .rightmenu a:hover {
+        
+        color: #ffffff;
+        text-shadow: 1px 0px 3px 0px;
+        /* text-decoration-line: underline; */
+        text-decoration-thickness: 3px;
+        font-size: 16px;
+        transition: 0.6s;
+        font-weight: bold;
+      }
+      .rightmenu button {
+        padding: 10px;
+        margin-top: -20px;
+        border-radius: 20px;
+        border: 0px solid silver;
+        background-color: maroon;
+        
+      }
+      .rightmenu a button:hover {
+        text-decoration-line: none;
+      }
+      .leftmenu img {
+        border-radius: 100px;
+      }
+      .menu {
+        background-color: rgb(255, 0, 0);
+      }
+      .dude {
+        width: 50%;
+        margin-left: 340px;
+        margin-top: 130px;
+      }
+      .dude h2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-shadow: 0px 2px 3px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .dude p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 25px;
+        text-shadow: 0px 1px 3px;
+        margin-left: 40px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        border: 2px solid black;
+        padding-left: 100px;
+      }
+      #items {
+        border: 2px solid black;
+        width: 350px;
+        margin: 10px;
+        padding: 4px;
+        text-align: center;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: #ffffff;
+      }
+      .container p {
+        font-size: 13px;
+        text-transform: capitalize;
+      }
+      .container h2 {
+        font-weight: bold;
+      }
+      .bgimag {
+        background-image: url(back1.jpg);
+      }
+      .leftfoot {
+        line-height: 16px;
+        padding-top: 80px;
+        background-color: #272c2f;
+        color: #ffffff;
+        padding-left: 150px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+       
+
+      }
+      .contact1 {
+        display: flex;
+        width: 22%;
+        font-size: 10px;
+        word-spacing: 5px;
+        font-weight: lighter;
+
+      }
+      .contact2 {
+        display: flex;
+      }
+      .contact3 {
+        display: flex;
+      }
+      .contact1 h3 {
+        margin-top: 6px;
+        padding-left: 10px;
+        font-weight: lighter;
+        font-size: 12px;
+      }
+      .contact2 h3 {
+        margin-top: 2px;
+        padding-left: 10px;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+      .contact3 h3 {
+        margin-top: 6px;
+        padding-left: 10px;
+        font-weight: lighter;
+        font-size: 12px;
+
+      }
+      .rightfoot {
+        float: right;
+        width: 26%;
+        margin-top: -170px;
+        color: #ffff;
+        margin-right: 200px;
+      }
+      .rightfoot h2 {
+        line-height: 50px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 18px;
+      }
+      .rightfoot p {
+        line-height: 25px;
+        font-family: sans-serif;
+        font-size: 10px;
+      }
+      .rightfoot img{
+        margin-left: -5px;
+        padding-bottom: 20px;
+      }
+      
+      .soft {
+        /* display: flex; */
+        margin-top: 30px;
+        width: 38%;
+      }
+      .soft h3 {
+        margin-left: 70px;
+        margin-top: -66px;
+        line-height: 36px;
+      }
+      .soft p {
+        margin-left: 70px;
+        line-height: 22px;
+        font-size: 12px;
+        font-family: sans-serif;
+      }
+      .digital {
+        /* display: flex; */
+        width: 38%;
+        padding-left: 700px;
+        margin-top: -100px;
+      }
+      .digital h3 {
+        margin-left: 55px;
+        margin-top: -60px;
+        line-height: 36px;
+      }
+      .digital p {
+        margin-left: 55px;
+        line-height: 22px;
+        
+      }
+      .uiux{
+        width: 38%;
+        padding-left: 20px;
+        font-family: sans-serif;
+      }
+      .uiux h3{
+        /* display: inline-block; */
+        margin-top: -50px;
+        padding-left: 50px;
+        line-height: 36px;
+      }
+      .uiux p{
+        padding-left: 50px;
+        line-height: 22px;
+      }
+      .graphic{
+        width: 38%;
+        padding-left: 700px;
+        margin-top: -100px;
+
+      }
+      .graphic h3{
+        margin-top: -55px;
+        padding-left: 50px;
+        line-height: 36px;
+      }
+      .graphic p{
+        padding-left: 50px;
+        line-height: 22px;
+      }
+      #id {
+        font-family: sans-serif;
+        margin-left: 50px;
+      }
+      #id h3{
+        text-shadow: 0px 2px 3px;
+      }
+      #id p{
+        font-size: 14px;
+        line-height: 22px;
+        text-shadow: 0px 1px 2px;
+      }
+
+    
+      .web{
+        width: 38%;
+        /* margin-left: 550px; */
+        padding-left: 14px;
+      
+      }
+      .web h3{
+        margin-top: -55px;
+        margin-left: 50px;
+        line-height: 36px;
+      }
+      .web p{
+        margin-left: 50px;
+      }
+      .about{
+        line-height: 50px;
+        padding: 50px;
+        padding-bottom: 100px;
+        background-color: #ffff;
+      }
+      .about h2{
+        text-align: center;
+        font-size: 33px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: lighter;
+        color:black;
+        text-shadow: 0px 2px 6px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimage">
+      <div class="menu">
+        <div class="leftmenu">
+          <img src="logo1.png" alt="" width="80px" />
+        </div>
+        <div class="rightmenu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li>
+              <button><a href="login2.html">Log in</a></button>
+            </li>
+            <li>
+              <button><a href="signup.html">Sign in</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="dude">
+          <h2>Freelance</h2>
+          <p>
+            Freelance worker are terms commonly used for a person who is
+            self-employed and not necessarily committed to a particular employer
+            long-term. Freelance workers are sometimes represented by a company
+            or a temporary agency that resells freelance labor to clients;
+            others work independently or use professional associations or
+            websites to get work.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <h2>Services</h2>
+      <div class="soft" id="id">
+        <img src="soft.png" alt="" width="70px" />
+        <h3>Software Development</h3>
+        <p>
+          Software development is one of our core services. Our primary focus is
+          to always maintain a high level of efficiency in design, coding,
+          implementation and testing phases.
+        </p>
+      </div>
+
+      <div class="digital" id="id">
+        <img src="digital.jpg" alt="" width="30px" height="40px" />
+        <h3>Digital Marketing</h3>
+        <p>
+          Digital marketing is the component of marketing that uses internet and
+          online based digital technologies such as desktop computers, mobile
+          phones and other digital media and platforms to promote products and
+          services.
+        </p>
+      </div>
+      <div class="uiux" id="id">
+        <img src="ui.PNG" alt="" width="35px">
+        <h3>UI/UX</h3>
+        <p>
+          User interface design or user interface engineering is the design of
+          user interfaces for machines and software, such as computers, home
+          appliances, mobile devices, and other electronic devices, with the
+          focus on maximizing usability and the user experience.
+        </p>
+      </div>
+      <div class="graphic" id="id">
+        <img src="graph.PNG" alt="" width="43px">
+        <h3>Graphic Design</h3>
+        <p>
+          Graphic design is the profession and academic discipline whose
+          activity consists in projecting visual communications intended to
+          transmit specific messages to social groups, with specific objectives.
+        </p>
+      </div>
+      <div class="web" id="id">
+        <img src="web.PNG" alt="" width="44px">
+        <h3>Web Design and Development</h3>
+        <p>
+          Web development is the work involved in developing a Web site for the
+          Internet or an intranet. Web development can range from developing a
+          simple single static page of plain text to complex web applications,
+          electronic businesses, and social network services.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot">
+        <div class="leftfoot">
+          <div class="contact1">
+            <img src="location.PNG" alt="" width="30px" height="30px" />
+            <h3>Software and Technology Park Gilgit</h3>
+          </div>
+          <br />
+          <div class="contact2">
+            <img src="call.PNG" alt="" width="30px" height="30px" />
+            <h3>05811-20010</h3>
+          </div>
+          <br />
+          <div class="contact3">
+            <img src="email.PNG" alt="" width="30px" height="30px" />
+            <h3>info@taqpa.com</h3>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="rightfoot">
+        <h2>About Company</h2>
+        <p>
+          Taqpa Provide Us A Learning Plateform Where Expert Teachers Train Us Different Skills Like Digital Marketing, UI/UX, Graphic Design And Web Development.
+        </p>
+        <img src="facebook.PNG" alt="" width="150px" />
+      </div>
+    </div>
+  </body>
+</html>

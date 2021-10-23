@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first project</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .bgimag{
+        background-image: url(loginimg.jpg);
+        width: 100%;
+        height: 100vh;
+      }
+      /* .bgimage {
+        background-image: url(back.jpg);
+        background-color: rgb(195, 195, 250);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+      } */
+      .rightmenu ul {
+        display: flex;
+        float: right;
+        list-style: none;
+        margin-top: -50px;
+        margin-right: 20px;
+      }
+      .rightmenu a {
+        padding: 10px;
+        text-decoration-line: none;
+        color: gainsboro;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        text-shadow: 0px 2px 3px;
+      }
+      .rightmenu a:hover {
+        color: #ffffff;
+        text-shadow: 1px 0px 3px 0px;
+        /* text-decoration-line: underline; */
+        /* text-decoration-thickness: 3px; */
+        font-size: 16px;
+        transition: 0.6s;
+        font-weight: bold;
+      }
+      .rightmenu button {
+        padding: 10px;
+        margin-top: -20px;
+        border-radius: 20px;
+        border: 0px solid silver;
+        background-color: maroon;
+      }
+      .rightmenu a button:hover {
+        text-decoration-line: none;
+      }
+      .leftmenu img {
+        border-radius: 100px;
+      }
+      .menu {
+        background-color: rgb(255, 0, 0);
+      }
+      .contact-container {
+        display: flex;
+        /* text-align: center; */
+      }
+      .contact-container form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 520px;
+        border: 0px solid black;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        background-image: url(contus.png);
+        box-shadow: 2px 5px 20px 10px;
+       
+        
+      }
+      .contact-container h3 {
+        font-size: 30px;
+        text-shadow: 1px 2px 3px;
+        line-height: 80px;
+        margin-left: 30px;
+      }
+      .contact-container input {
+        padding: 10px;
+        width: 220px;
+        box-shadow: 2px 3px;
+        background-color: black;
+      }
+      .contact-container input:focus{
+        background-color: #ffffff;
+      }
+      .contact-container textarea {
+        box-shadow: 2px 3px;
+        background-color: black;
+      }
+      .contact-container textarea:focus{
+        background-color: #ffffff;
+      }
+
+      .contact-container {
+        /* border: 1px solid silver; */
+        width: 40%;
+        line-height: 40px;
+      }
+      .contact-container label {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-shadow: 0px 2px 3px;
+        
+      }
+      #btn {
+        padding: 10px;
+        border: 0px solid silver;
+        width: 120px;
+        border-radius: 20px;
+        background-color: maroon;
+        color: #ffffff;
+        margin-top: -50px;
+      }
+      #btn:active{
+        background-color:rgb(98, 1, 1);
+      }
+      .leftfoot {
+        line-height: 25px;
+        padding-top: 50px;
+        background-color: #272c2f;
+        color: #ffffff;
+        padding-left: 150px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .contact1 {
+        display: flex;
+        width: 22%;
+        font-size: 14px;
+      }
+      .contact2 {
+        display: flex;
+      }
+      .contact3 {
+        display: flex;
+      }
+      .contact1 h3 {
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+      .contact2 h3 {
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+      .contact3 h3 {
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+      .rightfoot {
+        float: right;
+        width: 26%;
+        margin-top: -245px;
+        color: #ffff;
+        margin-right: 200px;
+      }
+      .rightfoot h2 {
+        line-height: 70px;
+        font-family: sans-serif;
+        font-weight: lighter;
+      }
+      .rightfoot p {
+        line-height: 25px;
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimag">
+      <div class="menu">
+        <div class="leftmenu">
+          <img src="logo1.png" alt="" width="80px" />
+        </div>
+        <div class="rightmenu">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">contact us</a></li>
+            <li>
+              <button><a href="login2.html">Log in</a></button>
+            </li>
+            <li>
+              <button><a href="signup.html">sign up</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-container">
+        <div class="form">
+          <form action="">
+            <h3>Contact Us</h3>
+            <label for="">Your Name</label>
+            <input type="text" placeholder="Your answer" />
+            <label for="">Your Email</label>
+            <input type="email" placeholder="Your answer" /> <br />
+            <label for="">How Can I Help You?</label>
+            <textarea
+              name="comment"
+              id=""
+              cols="20"
+              rows="5"
+              placeholder="Enter Your Comment...."
+            ></textarea>
+            <br /><br /><br />
+            <button id="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot">
+        <div class="leftfoot">
+          <div class="contact1">
+            <img src="location.PNG" alt="" width="50px" />
+            <h3>Software and Technology Park Gilgit</h3>
+          </div>
+          <br />
+          <div class="contact2">
+            <img src="call.PNG" alt="" width="48px" />
+            <h3>05811-20010</h3>
+          </div>
+          <br />
+          <div class="contact3">
+            <img src="email.PNG" alt="" width="50px" />
+            <h3>info@taqpa.com</h3>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="rightfoot">
+        <h2>About Company</h2>
+        <p>
+          Taqpa Provide Us A Learning Plateform Where Expert Teachers Train Us Different Skills Like Digital Marketing, UI/UX, Graphic Design And Web Development.
+        </p>
+        <img src="facebook.PNG" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
