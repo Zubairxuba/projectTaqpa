@@ -26,13 +26,14 @@
         margin-right: 20px;
       }
       .rightmenu a {
-        padding: 10px;
+        padding: 20px;
         text-decoration-line: none;
         color: gainsboro;
         font-weight: bolder;
         font-size: 14px;
         text-transform: uppercase;
         font-family: sans-serif;
+        transition: 0.3s;
         /* text-shadow: 0px 2px 3px; */
       }
       .rightmenu a:hover {
@@ -44,23 +45,40 @@
         font-size: 16px;
         transition: 0.6s;
         font-weight: bold;
+        text-decoration-line: underline;
       }
       .rightmenu button {
         padding: 10px;
+        margin: 1px;
         margin-top: -20px;
         border-radius: 20px;
-        border: 0px solid silver;
+        border: 1px solid silver;
         background-color: maroon;
+        transition: 0.4s;
         
       }
-      .rightmenu a button:hover {
-        text-decoration-line: none;
+      .rightmenu button:hover {
+        
+        transition: 0.4s;
+        /* background-color: red; */
       }
       .leftmenu img {
         border-radius: 100px;
       }
       .menu {
         background-color: rgb(255, 0, 0);
+        height: 13vh;
+        transition: 0.5s;
+        
+      }
+      .menu:hover{
+        height: 15vh;
+        transition: 0.5s;
+        background-color:rgb(163, 1, 1);
+        
+      }
+      .content{
+        width: 100%;
       }
       .dude {
         width: 50%;
@@ -278,6 +296,7 @@
         color:black;
         text-shadow: 0px 2px 6px ;
       }
+      
     </style>
   </head>
   <body>
@@ -289,13 +308,13 @@
         <div class="rightmenu">
           <ul>
             <li><a href="#">home</a></li>
-            <li><a href="about.html">about</a></li>
+            <li><a href="about2.html">about</a></li>
             <li><a href="contact.html">contact us</a></li>
             <li>
               <button><a href="login2.html">Log in</a></button>
             </li>
             <li>
-              <button><a href="signup.html">Sign in</a></button>
+              <button><a href="sign.html">Sign Up</a></button>
             </li>
           </ul>
         </div>

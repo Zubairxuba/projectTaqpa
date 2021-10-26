@@ -10,7 +10,7 @@
         margin: 0px;
         padding: 0px;
       }
-      .bgimag{
+      .bgimag {
         background-image: url(loginimg.jpg);
         width: 100%;
         height: 100vh;
@@ -37,12 +37,13 @@
         text-transform: uppercase;
         font-family: sans-serif;
         text-shadow: 0px 2px 3px;
+        transition: 0.5s;
       }
       .rightmenu a:hover {
         color: #ffffff;
         text-shadow: 1px 0px 3px 0px;
-        /* text-decoration-line: underline; */
-        /* text-decoration-thickness: 3px; */
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
         font-size: 16px;
         transition: 0.6s;
         font-weight: bold;
@@ -62,7 +63,15 @@
       }
       .menu {
         background-color: rgb(255, 0, 0);
+        height: 13vh;
+        transition: 0.5s;
+        
       }
+      .menu:hover{
+        height: 15vh;
+        transition: 0.5s;
+        background-color:rgb(163, 1, 1);
+      } 
       .contact-container {
         display: flex;
         /* text-align: center; */
@@ -71,19 +80,18 @@
         display: flex;
         flex-direction: column;
         margin-left: 520px;
-        border: 0px solid black;
+        border: 1px solid maroon;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 20px;
         margin-top: 20px;
         background-image: url(contus.png);
-        box-shadow: 2px 5px 20px 10px;
-       
-        
+        box-shadow: 2px 5px 20px 10px maroon;
       }
       .contact-container h3 {
+        color: #ffffff;
         font-size: 30px;
-        text-shadow: 1px 2px 3px;
+        text-shadow: 1px 2px 3px black;
         line-height: 80px;
         margin-left: 30px;
       }
@@ -91,16 +99,16 @@
         padding: 10px;
         width: 220px;
         box-shadow: 2px 3px;
-        background-color: black;
+        background-color: white;
       }
-      .contact-container input:focus{
-        background-color: #ffffff;
+      .contact-container input:focus {
+        background-color: gainsboro;
       }
       .contact-container textarea {
         box-shadow: 2px 3px;
-        background-color: black;
+        background-color:white;
       }
-      .contact-container textarea:focus{
+      .contact-container textarea:focus {
         background-color: #ffffff;
       }
 
@@ -111,24 +119,27 @@
       }
       .contact-container label {
         font-family: Georgia, "Times New Roman", Times, serif;
-        text-shadow: 0px 2px 3px;
-        
+        text-shadow: 0px 2px 3px black;
+        color: #ffffff;
       }
       #btn {
         padding: 10px;
         border: 0px solid silver;
         width: 120px;
-        border-radius: 20px;
+        border-radius: 4px;
         background-color: maroon;
         color: #ffffff;
-        margin-top: -50px;
+        margin-top: -70px;
       }
-      #btn:active{
-        background-color:rgb(98, 1, 1);
+      #btn:hover {
+        background-color: rgb(98, 1, 1);
+        border: 1px solid #ffffff;
+        box-shadow: 2px 2px 10px 2px black;
       }
+
       .leftfoot {
-        line-height: 25px;
-        padding-top: 50px;
+        line-height: 16px;
+        padding-top: 80px;
         background-color: #272c2f;
         color: #ffffff;
         padding-left: 150px;
@@ -137,7 +148,9 @@
       .contact1 {
         display: flex;
         width: 22%;
-        font-size: 14px;
+        font-size: 10px;
+        word-spacing: 5px;
+        font-weight: lighter;
       }
       .contact2 {
         display: flex;
@@ -146,33 +159,48 @@
         display: flex;
       }
       .contact1 h3 {
-        margin-top: 10px;
+        margin-top: 6px;
         padding-left: 10px;
+        font-weight: lighter;
+        font-size: 12px;
       }
       .contact2 h3 {
-        margin-top: 10px;
+        margin-top: 2px;
         padding-left: 10px;
+        font-weight: lighter;
+        font-size: 14px;
       }
       .contact3 h3 {
-        margin-top: 10px;
+        margin-top: 6px;
         padding-left: 10px;
+        font-weight: lighter;
+        font-size: 12px;
       }
       .rightfoot {
         float: right;
         width: 26%;
-        margin-top: -245px;
+        margin-top: -166px;
         color: #ffff;
         margin-right: 200px;
       }
       .rightfoot h2 {
-        line-height: 70px;
+        line-height: 50px;
         font-family: sans-serif;
         font-weight: lighter;
+        font-size: 18px;
       }
       .rightfoot p {
         line-height: 25px;
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 10px;
+      }
+      .rightfoot img {
+        margin-left: -5px;
+        padding-bottom: 20px;
+      }
+      .form a {
+        text-decoration-line: none;
+        color: #ffffff;
       }
     </style>
   </head>
@@ -185,13 +213,13 @@
         <div class="rightmenu">
           <ul>
             <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
+            <li><a href="about2.html">about</a></li>
             <li><a href="#">contact us</a></li>
             <li>
               <button><a href="login2.html">Log in</a></button>
             </li>
             <li>
-              <button><a href="signup.html">sign up</a></button>
+              <button><a href="sign.html">sign up</a></button>
             </li>
           </ul>
         </div>
@@ -213,7 +241,7 @@
               placeholder="Enter Your Comment...."
             ></textarea>
             <br /><br /><br />
-            <button id="btn">Submit</button>
+            <button id="btn"><a href="thank.html">Submit</a></button>
           </form>
         </div>
       </div>
@@ -222,17 +250,17 @@
       <div class="foot">
         <div class="leftfoot">
           <div class="contact1">
-            <img src="location.PNG" alt="" width="50px" />
+            <img src="location.PNG" alt="" width="30px" />
             <h3>Software and Technology Park Gilgit</h3>
           </div>
           <br />
           <div class="contact2">
-            <img src="call.PNG" alt="" width="48px" />
+            <img src="call.PNG" alt="" width="30px" />
             <h3>05811-20010</h3>
           </div>
           <br />
           <div class="contact3">
-            <img src="email.PNG" alt="" width="50px" />
+            <img src="email.PNG" alt="" width="30px" />
             <h3>info@taqpa.com</h3>
           </div>
           <br />
@@ -241,9 +269,11 @@
       <div class="rightfoot">
         <h2>About Company</h2>
         <p>
-          Taqpa Provide Us A Learning Plateform Where Expert Teachers Train Us Different Skills Like Digital Marketing, UI/UX, Graphic Design And Web Development.
+          Taqpa Provide Us A Learning Plateform Where Expert Teachers Train Us
+          Different Skills Like Digital Marketing, UI/UX, Graphic Design And Web
+          Development.
         </p>
-        <img src="facebook.PNG" alt="" />
+        <img src="facebook.PNG" alt="" width="150px" />
       </div>
     </div>
   </body>

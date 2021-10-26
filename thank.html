@@ -60,7 +60,11 @@
       }
       .leftmenu img {
         border-radius: 100px;
+        /* padding: 5px; */
       }
+      /* .leftmenu img:hover{
+         border: 1px solid gainsboro;
+      } */
       .menu {
         background-color: rgb(255, 0, 0);
       }
@@ -73,34 +77,17 @@
         flex-direction: column;
         margin-left: 520px;
         border: 3px solid black;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 20px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+        padding-bottom: 90px;
         margin-top: 20px;
-        background-image: url(contus.png);
+        /* background-image: url(contus.png); */
       
         box-shadow: 0px 5px 10px 10px;
        
-        
       }
-      .contact-container h3 {
-        font-size: 30px;
-        text-shadow: 1px 2px 3px;
-        line-height: 80px;
-        margin-left: 30px;
-      }
-      .contact-container input {
-        padding: 10px;
-        width: 220px;
-        box-shadow: 2px 3px;
-        background-color: black;
-      }
-      .contact-container input:focus{
-          background-color: #ffffff;
-      }
-      /* .contact-container textarea {
-        box-shadow: 2px 3px;
-      } */
+      
+
 
       .contact-container {
         /* border: 1px solid silver; */
@@ -112,41 +99,28 @@
         text-shadow: 0px 2px 3px;
         
       }
-      #btn {
-        padding: 10px;
-        border: 0px solid silver;
-        width: 140px;
-        border-radius: 20px;
-        background-color: maroon;
-        color: #ffffff;
-        margin-top: -50px;
-        margin-top: 40px;
-      }
-      #btn:hover{
-          background-color: rgb(98, 1, 1);
-          box-shadow: 4px 3px 20px 3px black;
-          border: 1px solid white;
-         
-      }
+      
       .form p{
           font-family: sans-serif;
-          font-size: 14px;
+          font-size: 38px;
           text-align: center;
-          padding-top: 10px;
+          color: black;
+          font-weight: lighter;
+          letter-spacing: 8px;
+          text-transform: uppercase;
+          padding-top: 50px;
       }
-      .form a{
-          font-weight: bold;
-          text-decoration-line: none;
-          color: #ffffff;
-      }
+      
       .bgimag{
           background-image: url(loginimg.jpg);
           width: 100%;
           height: 100vh;
       }
-      .already a{
-        color: #551a8b;
-      }
+      /* .form img { */
+          /* background-color: hsl(200, 100, 100) */
+      /* .form a{
+          color: #ffffff;
+      } */
     </style>
   </head>
   <body>
@@ -164,7 +138,7 @@
               <button><a href="login2.html">Log in</a></button>
             </li>
             <li>
-              <button><a href="#">sign up</a></button>
+              <button><a href="sign.html">sign up</a></button>
             </li>
           </ul>
         </div>
@@ -172,16 +146,17 @@
       <div class="contact-container">
         <div class="form">
           <form action="">
-            <h3>SIGN UP HERE</h3>
+              <img src="thank.PNG" alt="" width="350px">
+              <p>Thank You</p>
+            <!-- <h3>SIGN UP HERE</h3>
             <label for="">Your Name</label>
             <input type="text" placeholder="Your answer" />
             <label for="">Your Email</label>
             <input type="email" placeholder="@gmail.com" /> <br />
             <label for="">Password</label>
             <input type="password" placeholder="password">
-            <button id="btn"> <a href="thank.html"> Create Account</a></button>
-            <div class="already">
-            <p>Already have an Account? <a href="login2.html">login</a></p></div>
+            <button id="btn">Create Account</button>
+            <p>Already have an Account? <a href="login2.html">login</a></p> -->
           </form>
         </div>
       </div>

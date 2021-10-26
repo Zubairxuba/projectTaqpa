@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .bgimag{
+        background-image: url(loginimg.jpg);
+        width: 100%;
+        height: 100vh;
+      }
+      /* .bgimage {
+        background-image: url(back.jpg);
+        background-color: rgb(195, 195, 250);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+      } */
+      .rightmenu ul {
+        display: flex;
+        float: right;
+        list-style: none;
+        margin-top: -50px;
+        margin-right: 20px;
+      }
+      .rightmenu a {
+        padding: 20px;
+        text-decoration-line: none;
+        color: gainsboro;
+        font-weight: bolder;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        transition: 0.3s;
+        /* text-shadow: 0px 2px 3px; */
+      }
+      .rightmenu a:hover {
+        
+        color: #ffffff;
+        text-shadow: 1px 0px 3px 0px;
+        /* text-decoration-line: underline; */
+        text-decoration-thickness: 3px;
+        font-size: 16px;
+        transition: 0.6s;
+        font-weight: bold;
+        text-decoration-line: underline;
+      }
+      .rightmenu button {
+        padding: 10px;
+        margin: 1px;
+        margin-top: -20px;
+        border-radius: 20px;
+        border: 1px solid silver;
+        background-color: maroon;
+        transition: 0.4s;
+        
+      }
+      .rightmenu button:hover {
+        
+        transition: 0.4s;
+        /* background-color: red; */
+      }
+      .leftmenu img {
+        border-radius: 100px;
+      }
+      .menu {
+        background-color: rgb(255, 0, 0);
+        height: 13vh;
+        transition: 0.5s;
+        
+      }
+      .menu:hover{
+        height: 15vh;
+        transition: 0.5s;
+        background-color:rgb(163, 1, 1);
+        
+      }
+      
+        .form{
+            background-image: url(contus.png);
+            width: 29%;
+            border: 1px solid maroon;
+            margin-left: 480px;
+            margin-top: 50px;
+            padding: 12px;
+            font-family: sans-serif;
+            line-height: 30px;
+            box-shadow: 1px 1px 20px 12px maroon;
+        }
+        .form input{
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid silver;
+            margin: 2px;
+        }
+        .form input:focus{
+          background-color: gainsboro;
+        }
+        
+        .form p{
+            color: gainsboro;
+            font-size: 15px;
+
+        }
+        .form h2{
+            color: #ffffff;
+            font-size: 28px;
+            text-shadow: 1px 4px 3px black;
+        }
+        #btn{
+            padding: 10px;
+            width: 30%;
+            margin-left: 130px;
+            background-color: maroon;
+            border-radius: 2px;
+            border: 1px solid white;
+        }
+        #btn a{
+            text-decoration-line: none;
+            color: white;
+        }
+        .para p{
+            font-size: 11px;
+            line-height: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: gray;
+        }
+        #btn1{
+            padding: 7px;
+            width:90px;
+            border-radius: 10px;
+            border: 1px solid silver;
+            background-color: #ffffff;    
+            text-shadow: 2px 1px 2px gainsboro;
+            color: rgb(102, 88, 88);
+        }    
+        #btn:hover {
+        background-color: rgb(98, 1, 1);
+        border: 1px solid #ffffff;
+        box-shadow: 2px 2px 10px 2px black;
+        }  
+        .form label{
+            font-size: 14px;
+            color: rgb(102, 88, 88);
+            text-shadow: 2px 1px 2px gainsboro;
+        }  
+        
+        
+    </style>
+</head>
+<body>
+    <div class="bgimag">
+        <div class="menu">
+          <div class="leftmenu">
+            <img src="logo1.png" alt="" width="80px" />
+          </div>
+          <div class="rightmenu">
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="about2.html">about</a></li>
+              <li><a href="contact.html">contact us</a></li>
+              <li>
+                <button><a href="login2.html">Log in</a></button>
+              </li>
+              <li>
+                <button><a href="sign.html">sign up</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+    <div class="form">
+    <h2>Sign Up</h2>
+    <p>It's quick and easy</p>
+    <hr>
+   
+        <form action="">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Surname"> <br>
+            <input type="text" placeholder="Mobile number or email address" size="48px"> <br> 
+            <input type="password" placeholder="New password" size="48" > <br>
+            <label>Date of birth</label> <br>
+            <input type="date"> <br>
+                <label>Gender</label> <br>
+                <div class="radio">
+                    <button id="btn1"> Female <input type="radio"></button>
+                    <button id="btn1">Male <input type="radio"></button>
+                    <button id="btn1">Custom <input type="radio"></button>
+                <!-- <input type="radio" value="Female">Female 
+                <input type="radio" value="Male">Male  -->
+            </div>
+            <div class="para">
+                <p>By clicking Sign Up, you agree to our terms, Data Policy and Cookie Policy.You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <button id="btn"><a href="">Sign Up</a></button>
+
+        
+
+        </form>
+    </div>
+
+</body>
+</html>
